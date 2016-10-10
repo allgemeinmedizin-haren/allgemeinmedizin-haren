@@ -1,0 +1,20 @@
+@import '../vendor/susy/susy';
+
+$susy: (
+  container: 1140px,
+  columns: 12,
+  gutters: 0,
+  global-box-sizing: border-box,
+  // debug: (
+  //   image: show,
+  //   color: rgba(blue, .125),
+  //   output: overlay
+  // ),
+  // output: isolate
+);
+
+@include border-box-sizing;
+
+.container {
+  @include container();
+}

@@ -1,0 +1,16 @@
+.footer-wrap {
+    @include container(100%);
+    width: 100%;
+    max-width: 760px;
+    // margin: 0;
+}
+
+.footer {
+    @include span(100%);
+    padding: 0.5em;
+    border-top: 5px solid blue;
+
+    @media (min-width: 769px) {
+
+    }
+}
