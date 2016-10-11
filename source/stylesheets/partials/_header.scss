@@ -1,0 +1,38 @@
+header {
+    @include container;
+    @include span(100%);
+
+
+    .title {
+        @include span(100%);
+        margin-top: 2em;
+        p {
+            font-size: 1em;
+            font-family: 'Cormorant Garamond', serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .title__hl {
+            font-size: 4em;
+            font-weigth: 400;
+            line-height: 1.5em;
+        }
+
+        .title--subtitle {
+            font-size: 2em;
+            text-align: right;
+            color: tint(black, 50%)
+        }
+
+        border-bottom: 1px get-color(grey, dark) solid;
+        padding: 2em 1em;
+    }
+
+
+    .navigation {
+        @include span(100%);
+        border-bottom: 1px get-color(grey, dark) solid;
+        padding: 0 1em;
+    }
+}

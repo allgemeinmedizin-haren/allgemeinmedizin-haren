@@ -1,14 +1,9 @@
-.footer-wrap {
-    @include container(100%);
-    width: 100%;
-    max-width: 760px;
-    // margin: 0;
-}
 
-.footer {
+footer {
+    @include container;
     @include span(100%);
-    padding: 0.5em;
-    border-top: 5px solid blue;
+    padding: 1em;
+    border-top: 1px get-color(grey, dark) solid;
 
     @media (min-width: 769px) {
 

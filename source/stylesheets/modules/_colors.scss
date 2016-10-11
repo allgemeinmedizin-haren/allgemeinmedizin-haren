@@ -10,17 +10,16 @@ $colors: (
     base: rgba(255, 255, 255, 1.0),
   ),
   black: (
-    base: rgba(0, 0, 0, 1.0),
+    base: rgba(10, 10, 10, 1.0),
   ),
-  gray-blue: (
-    base: rgba(83, 98, 112, 1.0),
-    dark: rgba(44, 62, 80, 1.0),
+  blue: (
+    base: #3F51B5,
+    dark: #1A237E,
+    light: #9FA8DA,
   ),
-  off-white: (
-    base: rgba(236, 240, 241, 1.0),
-  ),
-  rust: (
-    base: rgba(192, 57, 43, 1.0),
+  grey: (
+    base: #f4f4f6,
+    dark: #bbb,
   )
 );
 

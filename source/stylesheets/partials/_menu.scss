@@ -1,76 +1,23 @@
-$menu__padding-top: 3em;
-$menu__close-button-thickness: 4px;
-$menu__background-color: red;
-$menu__text-color: blue;
-$menu__font-size: 2rem;
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
 
-.overlay-menu {
-    display:none;
-    &--show {
-        display: flex;
-    }
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
+    .menu__element {
+        display: inline;
 
-    flex-direction: column;
-    z-index: 200;
-    padding-top: $menu__padding-top;
-    background-color: $menu__background-color;
-
-    .close {
-        position: absolute;
-        left: 1em;
-        top: 1em;
-        width: 32px;
-        height: 32px;
-        opacity: 0.3;
-
-        &:hover {
-            opacity: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        & a {
+            border: 0;
         }
 
-        &:before, &:after {
-            position: absolute;
-            left: 15px;
-            content: ' ';
-            height: 33px;
-            width: $menu__close-button-thickness;
-            background-color: #333;
+
+        &:not(:first-child):before {
+            content: "";
+            margin: 0 1.5em;
+            border-left: 1px get-color(grey, dark) solid;
         }
-
-        &:before {
-            transform: rotate(45deg);
-        }
-
-        &:after {
-            transform: rotate(-45deg);
-        }
-    }
-}
-
-.menu-item {
-    flex: 1;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 1px solid yellow;
-
-    a {
-        flex: 1;
-        display: flex;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        border: none;
-        color: $menu__text-color;
-        font-size: $menu__font-size;
     }
 }

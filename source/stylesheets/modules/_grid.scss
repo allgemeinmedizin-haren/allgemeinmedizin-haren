@@ -1,7 +1,7 @@
-@import '../vendor/susy/susy';
+@import '../vendor/susy/sass/susy';
 
 $susy: (
-  container: 1140px,
+  container: 1000px,
   columns: 12,
   gutters: 0,
   global-box-sizing: border-box,
