@@ -9,7 +9,8 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman', :git => 'https://github.com/allgemeinmedizin-haren/middleman'
-gem 'middleman-compass', :git => 'https://github.com/allgemeinmedizin-haren/middleman-compass'
+gem 'middleman', '>= 4.0.0'
+gem 'middleman-livereload'
+gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-deploy', :git => 'https://github.com/allgemeinmedizin-haren/middleman-deploy'
 gem 'middleman-minify-html', :git => 'https://github.com/allgemeinmedizin-haren/middleman-minify-html'
