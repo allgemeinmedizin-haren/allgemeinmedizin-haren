@@ -1,0 +1,17 @@
+.impressum {
+    table {
+        width: 100%;
+    }
+    td.leftcol {
+        padding-right: 2em;
+        vertical-align: top;
+    }
+
+
+    .content__left-col {
+        @include span(50%);
+    }
+    .content__right-col {
+        @include span(50%);
+    }
+}
