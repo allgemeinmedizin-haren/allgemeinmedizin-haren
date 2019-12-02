@@ -35,28 +35,30 @@ header {
         border-bottom: 1px get-color(grey, dark) solid;
         padding: 0 1em;
     }
+    
+    @media ( max-width: 550px) {
+        .title {
+            margin-top: 0 !important;
+            .title__hl {
+                font-size: 3em !important;   
+            }
+            .title--subtitle {
+                font-size: 1.5em !important;  
+            }
+        } 
+    }
+
+    @media ( max-width: 415px) {
+        .title {
+            margin-top: 0;
+            .title__hl {
+                font-size: 2.5em !important;   
+            }
+            .title--subtitle {
+                font-size: 1.5em !important;  
+            }
+        } 
+    }
 }
 
-@media ( max-width: 550px) {
-    header .title {
-        margin-top: 0 !important;
-        .title__hl {
-            font-size: 3em !important;   
-        }
-        .title--subtitle {
-            font-size: 1.5em !important;  
-        }
-    } 
-}
 
-@media ( max-width: 415px) {
-    .header .title {
-        margin-top: 0;
-        .title__hl {
-            font-size: 2.5em !important;   
-        }
-        .title--subtitle {
-            font-size: 1.5em !important;  
-        }
-    } 
-}
