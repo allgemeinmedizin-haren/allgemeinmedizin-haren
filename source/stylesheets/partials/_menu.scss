@@ -23,7 +23,7 @@
 }
 @media ( max-width: 700px) {
     .menu__element {
-        display: list-item;
+        display: list-item !important;
         margin: 2em;
         &:before {
             display: none;
