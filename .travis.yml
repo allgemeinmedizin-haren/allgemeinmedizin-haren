@@ -15,7 +15,7 @@ script:
   - git remote add origin https://allgemeinmedizin-haren:${GH_TOKEN}@github.com/allgemeinmedizin-haren/allgemeinmedizin-haren.github.io.git
   - git add -A .
   - git commit --allow-empty -m "Automated Deploy"
-  - git push --force origin master
+  - git push -u origin master
 branches:
   only:
   - master
