@@ -21,3 +21,9 @@
     }
 
 }
+
+@media ( max-width: 674px)  {
+    .content__right-col, .content__left-col {
+        @include span(100%);
+    }
+}
