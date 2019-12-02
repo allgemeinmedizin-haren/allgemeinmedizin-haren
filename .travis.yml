@@ -8,14 +8,13 @@ install:
 script:
   - git config --global user.name '${GIT_NAME}'
   - git config --global user.email '${GIT_NAME}'
-
   - bundle exec middleman build
   - cd build
   - git init .
   - git remote add origin https://allgemeinmedizin-haren:${GH_TOKEN}@github.com/allgemeinmedizin-haren/allgemeinmedizin-haren.github.io.git
   - git add -A .
   - git commit --allow-empty -m "Automated Deploy"
-  - git push -u origin master
+  - git push --force origin master
 branches:
   only:
   - master
