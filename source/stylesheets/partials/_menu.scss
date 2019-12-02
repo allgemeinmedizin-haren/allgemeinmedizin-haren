@@ -21,3 +21,12 @@
         }
     }
 }
+@media ( max-width: 700px) {
+    .menu__element {
+        display: list-item;
+        margin: 2em;
+        &:before {
+            display: none;
+        }
+    }
+}
