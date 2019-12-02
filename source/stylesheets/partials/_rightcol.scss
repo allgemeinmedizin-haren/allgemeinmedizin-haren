@@ -15,3 +15,12 @@
         margin: 0;
     }
 }
+
+@media ( min-width: 674px) and (max-width: 944px) {
+    .hours {
+        font-size:1em;
+    }
+    .address {
+        font-size:1em;
+    }
+}
