@@ -10,7 +10,9 @@ script:
   - git config --global user.email '${GIT_NAME}'
   - git remote set-url origin https://allgemeinmedizin-haren:${GH_TOKEN}@github.com/allgemeinmedizin-haren/allgemeinmedizin-haren.github.io.git
   - bundle exec middleman build
-  - bundle exec middleman deploy
+  - git add -A build
+  - git commit --allow-empty -m "Automated Deploy"
+  - git push --force origin master
 branches:
   only:
   - master
